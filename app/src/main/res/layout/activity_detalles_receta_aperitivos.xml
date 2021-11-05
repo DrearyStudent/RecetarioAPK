@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vista.detallesrecetas.DetallesRecetaAperitivos">
+
+    <TextView
+        android:id="@+id/nombreAperitivoDetalles"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:hint="Nombre"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ingredientesAperitivo"
+        android:layout_width="350dp"
+        android:layout_height="225dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:hint="Ingredientes"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombreAperitivoDetalles" />
+
+    <TextView
+        android:id="@+id/instruccionesAperitivo"
+        android:layout_width="350dp"
+        android:layout_height="225dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:hint="Instruccion"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingredientesAperitivo" />
+
+    <ImageView
+        android:id="@+id/imagenAperitivoDetalles"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/aperitivo2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
